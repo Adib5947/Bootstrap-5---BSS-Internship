@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <a class="visually-hidden-focusable" href="#content"
+        >Skip to main content (Tab to reveal me)</a
+      >
+
+      <h2 id="content">
+        Visible heading
+        <span class="visually-hidden"
+          >— extra context only screen readers get</span
+        >
+      </h2>
+
+      <p>
+        The heading above contains hidden text. You can't see it, but a screen
+        reader announces the full sentence. You already used this class inside
+        spinners:
+        <code>&lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;</code>
+      </p>
+
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
