@@ -14,65 +14,110 @@
   <body>
     <div class="container mt-3">
       <div class="row justify-content-center">
-        <div class="col-md-4">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <input type="checkbox" class="form-check-input me-1" />
-              First Checkbox
-            </li>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a
+                  class="list-group-item list-group-item-action active"
+                  id="list-home-list"
+                  data-bs-toggle="list"
+                  href="#list-home"
+                  role="tab"
+                  aria-controls="list-home"
+                >
+                  Home</a
+                >
 
-            <li class="list-group-item">
-              <input type="checkbox" class="form-check-input me-1" />
-              Second Checkbox
-            </li>
-            <li class="list-group-item">
-              <input
-                name="radio-check"
-                type="radio"
-                class="form-check-input me-1"
-              />
-              First Radio
-            </li>
-            <li class="list-group-item">
-              <input
-                name="radio-check"
-                type="radio"
-                class="form-check-input me-1"
-              />
-              Second Radio
-            </li>
-          </ul>
-        </div>
-      </div>
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-profile-list"
+                  data-bs-toggle="list"
+                  href="#list-profile"
+                  role="tab"
+                  aria-controls="list-profile"
+                >
+                  Profile</a
+                >
 
-      <div class="row justify-content-center mt-3">
-        <div class="col-md-4">
-          <div class="list-group">
-            <label class="list-group-item">
-              <input type="checkbox" class="form-check-input me-1" />
-              First Checkbox
-            </label>
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-messages-list"
+                  data-bs-toggle="list"
+                  href="#list-messages"
+                  role="tab"
+                  aria-controls="list-messages"
+                >
+                  Messages</a
+                >
 
-            <label class="list-group-item">
-              <input type="checkbox" class="form-check-input me-1" />
-              Second Checkbox
-            </label>
-            <label class="list-group-item">
-              <input
-                name="radio-check"
-                type="radio"
-                class="form-check-input me-1"
-              />
-              First Radio
-            </label>
-            <label class="list-group-item">
-              <input
-                name="radio-check"
-                type="radio"
-                class="form-check-input me-1"
-              />
-              Second Radio
-            </label>
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-settings-list"
+                  data-bs-toggle="list"
+                  href="#list-settings"
+                  role="tab"
+                  aria-controls="list-settings"
+                >
+                  Settings</a
+                >
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="tab-content" id="navtab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="list-home"
+                  role="tab-panel"
+                  aria-labelledby="list-home-list"
+                >
+                  <h5>Home Content</h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, in omnis, tenetur distinctio ipsa a illum tempore id
+                  exercitationem voluptates aspernatur totam, facere molestiae
+                  ab praesentium ducimus impedit quis vitae?
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="list-profile"
+                  role="tab-panel"
+                  aria-labelledby="list-profile-list"
+                >
+                  <h5>Profile Content</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis eveniet quos, inventore iusto molestiae sint rem
+                  quam fuga praesentium exercitationem, distinctio eos quisquam
+                  optio id nulla similique cum consequuntur tempora.
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="list-messages"
+                  role="tab-panel"
+                  aria-labelledby="list-messages-list"
+                >
+                  <h5>Messages Content</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis eveniet quos, inventore iusto molestiae sint rem
+                  quam fuga praesentium exercitationem, distinctio eos quisquam
+                  optio id nulla similique cum consequuntur tempora.
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="list-settings"
+                  role="tab-panel"
+                  aria-labelledby="list-settings-list"
+                >
+                  <h5>Settings Content</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Perspiciatis eveniet quos, inventore iusto molestiae sint rem
+                  quam fuga praesentium exercitationem, distinctio eos quisquam
+                  optio id nulla similique cum consequuntur tempora.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
