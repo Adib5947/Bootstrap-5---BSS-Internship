@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="d-flex flex-wrap gap-3">
+        <div
+          class="overflow-auto bg-light border p-2"
+          style="width: 200px; height: 100px"
+        >
+          <strong>overflow-auto:</strong> scrollbars appear only when this
+          content does not fit inside the fixed-size box, like right now.
+        </div>
+        <div
+          class="overflow-hidden bg-light border p-2"
+          style="width: 200px; height: 100px"
+        >
+          <strong>overflow-hidden:</strong> anything past the box edge is simply
+          cut off, no scrolling possible at all here.
+        </div>
+        <div
+          class="overflow-visible bg-light border p-2"
+          style="width: 200px; height: 100px"
+        >
+          <strong>overflow-visible:</strong> content spills out past the border
+          of the box and overlaps what is below.
+        </div>
+        <div
+          class="overflow-scroll bg-light border p-2"
+          style="width: 200px; height: 100px"
+        >
+          <strong>overflow-scroll:</strong> scrollbars are always shown even
+          when content would fit.
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h5>user-select</h5>
+      <p class="user-select-all bg-light border p-2">
+        user-select-all: one click selects all of this text.
+      </p>
+      <p class="user-select-auto bg-light border p-2">
+        user-select-auto: normal selection behavior.
+      </p>
+      <p class="user-select-none bg-light border p-2">
+        user-select-none: you cannot select this text.
+      </p>
+      <h5 class="mt-4">pointer-events</h5>
+      <p>
+        <a href="#" class="pe-none" tabindex="-1" aria-disabled="true"
+          >pe-none: this link cannot be clicked</a
+        >
+      </p>
+      <p><a href="#" class="pe-auto">pe-auto: this link is clickable</a></p>
+      <p class="pe-none">
+        <a href="#" tabindex="-1" aria-disabled="true"
+          >inherits pe-none from parent</a
+        >
+        — <a href="#" class="pe-auto">but this one overrides with pe-auto</a>
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5.3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <p>Resize the window: contain below md, cover from md up.</p>
+      <svg
+        class="object-fit-contain object-fit-md-cover border"
+        width="100%"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        preserveAspectRatio="xMidYMid slice"
+        focusable="false"
+      >
+        <rect width="100%" height="100%" fill="#0d6efd"></rect>
+        <text x="50%" y="50%" fill="#fff" text-anchor="middle">
+          object-fit-contain object-fit-md-cover
+        </text>
+      </svg>
+      <p class="mt-4">
+        All breakpoints available:
+        object-fit-{sm|md|lg|xl|xxl}-{contain|cover|fill|scale|none}
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

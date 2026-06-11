@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h5>All flex-fill (equal claim to space)</h5>
+      <div class="d-flex bg-light border mb-3">
+        <div class="flex-fill p-2 bg-primary text-white">
+          flex-fill with long content
+        </div>
+        <div class="flex-fill p-2 bg-secondary text-white">flex-fill</div>
+        <div class="flex-fill p-2 bg-dark text-white">flex-fill</div>
+      </div>
+      <h5>Only one flex-fill</h5>
+      <div class="d-flex bg-light border">
+        <div class="flex-fill p-2 bg-primary text-white">
+          flex-fill takes the rest
+        </div>
+        <div class="p-2 bg-secondary text-white">normal</div>
+        <div class="p-2 bg-dark text-white">normal</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
