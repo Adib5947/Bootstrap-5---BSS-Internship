@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .custom-tooltip {
+        --bs-tooltip-bg: var(--bs-primary);
+        --bs-tooltip-color: var(--bs-white);
+        --bs-tooltip-opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This tooltip uses the primary color"
+      >
+        Custom tooltip
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]',
+      );
+      [...tooltipTriggerList].map((el) => new bootstrap.Tooltip(el));
+    </script>
+  </body>
+</html>

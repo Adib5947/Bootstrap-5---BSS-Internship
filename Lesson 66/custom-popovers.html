@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom popover styling via a custom class and CSS variables */
+      .custom-popover {
+        --bs-popover-max-width: 200px;
+        --bs-popover-border-color: var(--bs-primary);
+        --bs-popover-header-bg: var(--bs-primary);
+        --bs-popover-header-color: var(--bs-white);
+        --bs-popover-body-padding-x: 1rem;
+        --bs-popover-body-padding-y: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="popover"
+        data-bs-custom-class="custom-popover"
+        title="Custom popover"
+        data-bs-content="This popover is styled with custom CSS variables."
+      >
+        Custom styled popover
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]',
+      );
+      [...popoverTriggerList].map((el) => new bootstrap.Popover(el));
+    </script>
+  </body>
+</html>
